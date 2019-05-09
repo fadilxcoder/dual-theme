@@ -1,0 +1,137 @@
+:root {
+	--color-bg: #F7E7EF;
+	--color-brand: #FFF;
+	--color-header: #92084C;
+	--color-main: #5B0932;
+	--color-nav: #B81365;
+	--color-nav-item: #E2A0C1;
+	--color-nav-item-hover: #FFF;
+	--border-radius: 10px;
+	--space2: 40px;
+	--space: 20px;
+	--transition-speed: 500ms;
+}
+
+article {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+article figure {
+	height: 260px;
+	margin: 0;
+	overflow: hidden;
+}
+article img {
+	width: 100%;
+}
+article section {
+	padding: var(--space2);
+}
+article section h1 {
+	line-height: 1.25em;
+	margin-top: 0;
+}
+article section p {
+	line-height: 1.75em;
+	margin: 2em 0;
+}
+
+body,
+nav,
+main,
+header {
+	transition: background-color var(--transition-speed);
+}
+
+body {
+	background-color: var(--color-bg);
+	color: #444;
+	font-family: 'Roboto Slab', serif;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: var(--space) 0;
+}
+
+header {
+	align-items: center;
+	background-color: var(--color-header);
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
+	display: flex;
+	padding: var(--space) var(--space2);
+}
+
+main {
+	background-color: var(--color-main);
+	border-bottom-right-radius: var(--border-radius);
+	padding: var(--space);
+}
+
+nav {
+	background-color: var(--color-nav);
+	border-bottom-left-radius: var(--border-radius);
+	font-size: 18px;
+	padding: var(--space2) 0;
+}
+nav a {
+	color: var(--color-nav-item);
+	display: block;
+	padding: 10px var(--space2);
+	position: relative;
+	text-decoration: none;
+	transition: color var(--transition-speed), padding-left 200ms;
+}
+nav a:before {
+	background-color: var(--color-nav-item);
+	content: '';
+	display: block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transition: width 200ms;
+	width: 0;
+}
+nav a:hover, nav a.active {
+	color: var(--color-nav-item-hover);
+	padding-left: 80px;
+}
+nav a:hover:before, nav a.active:before {
+	width: 60px;
+}
+nav ul,
+nav li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.logo #text,
+.logo #rectangle,
+.lightning {
+	stroke: var(--color-brand);
+	fill: none;
+	transition: fill var(--transition-speed), stroke var(--transition-speed);
+}
+
+.filled .lightning,
+.logo #text {
+	fill: var(--color-brand);
+}
+
+.toggler {
+	cursor: pointer;
+}
+
+.logo {
+	margin-right: 20px;
+	display: block;
+}
+
+.wrapper {
+	border-bottom-right-radius: var(--border-radius);
+	display: grid;
+	grid-template-columns: 220px 1fr;
+}
