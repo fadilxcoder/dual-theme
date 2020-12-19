@@ -38,4 +38,4 @@ function toggleTheme(e)
 
 document.getElementById('toggler').addEventListener('click', toggleTheme);
 
-console.log('git automated-deploy - OK');
+console.log('git automated-deploy - deploy keys');
