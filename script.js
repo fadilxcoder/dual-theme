@@ -37,3 +37,5 @@ function toggleTheme(e)
 }
 
 document.getElementById('toggler').addEventListener('click', toggleTheme);
+
+console.log('automated deploy...');
