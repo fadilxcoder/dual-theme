@@ -1,5 +1,0 @@
-language: php
-php:
-  - '7.3'
-script:
-- echo "skipping tests"  
