@@ -26,6 +26,6 @@ define("MAX_EXECUTION_TIME", 180);
 define("BEFORE_PULL", "");                                             
 
 // A command to execute after successfully pulling
-define("AFTER_PULL", "composer installx");                                              
+define("AFTER_PULL", "/home4/firstau1/public_html/composer.phar install");                                              
 
 require_once("deployer.php");
