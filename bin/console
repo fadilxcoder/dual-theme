@@ -1,0 +1,53 @@
+#!/usr/bin/php
+<?php
+
+# REQUIREMENT
+require 'vendor/autoload.php';
+
+use Faker\Factory as Factory;
+
+$services = [
+    'text:logger'	=> 'loggedText'
+];
+
+array_shift($argv);
+	
+foreach ($argv as $key => $value) {
+    if (array_key_exists($value, $services)) {
+        $func = $services[$value];
+        $func();
+    } else {
+        echo 'Command "'.$value.'" was not found ! ';
+    }
+}
+
+function loggedText()
+{
+    $arr = [];
+    $faker = Factory::create();
+
+    for($i=0; $i<100; $i++):
+        $arr[] = [
+            '_name' => $faker->name,
+            '_address' => $faker->address,
+            '_email' => $faker->email,
+            '_card_type' => $faker->creditCardType,
+            '_card_number' => $faker->creditCardNumber,
+            '_uuid' => $faker->uuid,
+        ];
+    endfor;
+
+    $json = json_encode($arr);
+    $file = 'JSON-' . rand(999, 99999) . '.json';
+    
+    file_put_contents($file, $json);
+}
+
+
+
+
+
+
+
+
+
