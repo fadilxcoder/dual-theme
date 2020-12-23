@@ -26,6 +26,6 @@ define("MAX_EXECUTION_TIME", 180);
 define("BEFORE_PULL", "");                                             
 
 // A command to execute after successfully pulling
-define("AFTER_PULL", "composer install");                                              
+define("AFTER_PULL", "xxxxxxxxxxxxxxx");                                              
 
 require_once("deployer.php");
