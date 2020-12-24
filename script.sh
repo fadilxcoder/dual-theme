@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/cpanel/composer/bin install
+/opt/cpanel/composer/bin/composer install
