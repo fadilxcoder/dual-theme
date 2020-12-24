@@ -26,9 +26,6 @@ define("MAX_EXECUTION_TIME", 180);
 define("BEFORE_PULL", "");                                             
 
 // A command to execute after successfully pulling
-// define("AFTER_PULL", "bash script.sh");
-define("AFTER_PULL", "");
-
-// shell_exec("bash ../script.sh");
+define("AFTER_PULL", "bin/console text:logger");
 
 require_once("deployer.php");
