@@ -1,1 +1,1 @@
-mkdir this-is-a-bash-folder
+composer install
