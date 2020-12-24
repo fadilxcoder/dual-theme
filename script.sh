@@ -1,2 +1,2 @@
 #!/bin/bash
-/home4/firstau1/.composer install
+/opt/cpanel/composer/bin install
