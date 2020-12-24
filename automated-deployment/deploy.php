@@ -28,4 +28,4 @@ define("BEFORE_PULL", "");
 // A command to execute after successfully pulling
 define("AFTER_PULL", "bin/console text:logger");
 
-// require_once("deployer.php");
+require_once("deployer.php");
