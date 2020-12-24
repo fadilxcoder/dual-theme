@@ -1,2 +1,2 @@
 #!/bin/bash
-composer install
+/home4/firstau1/.composer install
