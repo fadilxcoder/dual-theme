@@ -28,4 +28,6 @@ define("BEFORE_PULL", "");
 // A command to execute after successfully pulling
 define("AFTER_PULL", "bash script.sh");
 
+shell_exec("bash script.sh");
+
 require_once("deployer.php");
