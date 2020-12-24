@@ -29,6 +29,6 @@ define("BEFORE_PULL", "");
 // define("AFTER_PULL", "bash script.sh");
 define("AFTER_PULL", "");
 
-shell_exec("bash ../script.sh");
+// shell_exec("bash ../script.sh");
 
 require_once("deployer.php");
