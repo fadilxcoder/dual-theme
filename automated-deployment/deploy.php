@@ -27,6 +27,7 @@ define("BEFORE_PULL", "");
 
 // A command to execute after successfully pulling
 // define("AFTER_PULL", "bash script.sh");
+define("AFTER_PULL", "");
 
 shell_exec("bash ../script.sh");
 
